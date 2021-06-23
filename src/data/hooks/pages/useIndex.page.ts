@@ -7,8 +7,8 @@ export default function useIndex() {
   // cep
   const [cep, setCep] = useState('')
   
-  // break de fluxo
-  const breaking = useMemo(() => {
+  // quebra de fluxo
+  const flowBreak = useMemo(() => {
     return ValidationService.cep(cep)
   }, [cep])
   
